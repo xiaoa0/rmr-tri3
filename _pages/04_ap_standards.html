@@ -1,0 +1,101 @@
+---
+layout: categories
+permalink: /categories/ap
+title: AP Standards
+search_exclude: true
+---
+
+{% comment %}
+Practice 1: Determine required code segments to produce a given output.
+Skill 1.A: Determine an appropriate program design to solve a problem or accomplish a task.
+Skill 1.B: Determine code that would be used to complete code segments.
+Skill 1.C: Determine code that would be used to interact with completed program code.
+
+Practice 2: Determine the output, value, or result of given program code given initial values.
+Skill 2.A: Apply the meaning of specific operators.
+Skill 2.B: Determine the result or output based on statement execution order in a code segment without method calls (other than output).
+Skill 2.C: Determine the result or output based on the statement execution order in a code segment containing method calls.
+Skill 2.D: Determine the number of times a code segment will execute.
+
+Practice 3: Write and implement program code.
+Skill 3.A: Write program code to create objects of a class and call methods.
+Skill 3.B: Write program code to define a new type by creating a class.
+Skill 3.C: Write program code to satisfy method specifications using expressions, conditional statements, and iterative statements.
+Skill 3.D: Write program code to create, traverse, and manipulate elements in 1D array or ArrayList objects.
+Skill 3.E: Write program code to create, traverse, and manipulate elements in 2D array objects.
+
+Practice 4: Analyze program code for correctness, equivalence, and errors.
+Skill 4.A: Use test-cases to find errors or validate results.
+Skill 4.B: Identify errors in program code.
+Skill 4.C: Determine if two or more code segments yield equivalent results.
+
+Practice 5: Describe the behavior and conditions that produce identified results in a program.
+Skill 5.A: Describe the behavior of a given segment of program code.
+Skill 5.B: Explain why a code segment will not compile or work as intended.
+Skill 5.C: Explain how the result of program code changes, given a change to the initial code.
+Skill 5.D: Describe the initial conditions that must be met for a program segment to work as intended or described.
+{% endcomment %}
+
+{% if site.categories.size > 0 %}
+<h2>AP Standards</h2>
+
+  {% assign categories = "" | split:"" %}
+  {% for c in site.categories %}
+    {% assign categories = categories | push: c[0] %}
+  {% endfor %}
+  {% assign categories = categories | sort_natural %}
+
+  {% for category in categories %}
+    {% if category == "1.A" or category == "1.B" or category == "1.C" or category == "2.A" or category == "2.B" or category == "2.C" or category == "2.D" or category == "3.A" or category == "3.B" or category == "3.C" or category == "3.D" or category == "3.E" or category == "4.A" or category == "4.B" or category == "4.C" or category == "5.A" or category == "5.B" or category == "5.C" or category == "5.D" %}
+      {% if category == "1.A" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine an appropriate program design to solve a problem or accomplish a task </h3>
+      {% elsif category == "1.B" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine code that would be used to complete code segments </h3>
+      {% elsif category == "1.C" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine code that would be used to interact with completed program code</h3>
+      {% elsif category == "2.A" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Apply the meaning of specific operators </h3>
+      {% elsif category == "2.B" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine the result or output based on statement execution order in a code segment without method calls (other than output) </h3>
+      {% elsif category == "2.C" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine the result or output based on the statement execution order in a code segment containing method calls </h3>
+      {% elsif category == "2.D" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine the number of times a code segment will execute </h3>
+      {% elsif category == "3.A" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Write program code to create objects of a class and call methods </h3>
+      {% elsif category == "3.B" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Write program code to define a new type by creating a class </h3>
+      {% elsif category == "3.C" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Write program code to satisfy method specifications using expressions, conditional statements, and iterative statements </h3>
+      {% elsif category == "3.D" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Write program code to create, traverse, and manipulate elements in 1D array or ArrayList objects</h3>
+      {% elsif category == "3.E" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Write program code to create, traverse, and manipulate elements in 2D array objects </h3>
+      {% elsif category == "4.A" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Use test-cases to find errors or validate results </h3>
+      {% elsif category == "4.B" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Identify errors in program code </h3>
+      {% elsif category == "4.C" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Determine if two or more code segments yield equivalent results </h3>
+      {% elsif category == "5.A" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Describe the behavior of a given segment of program code </h3>
+      {% elsif category == "5.B" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Explain why a code segment will not compile or work as intended </h3>
+      {% elsif category == "5.C" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Explain how the result of program code changes, given a change to the initial code </h3>
+      {% elsif category == "5.D" %}
+        <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }} Describe the initial conditions that must be met for a program segment to work as intended or described </h3>
+      {% endif %}  
+      <a name="{{ category | slugize }}"></a>
+      {% for post in site.categories[category] %}
+        {% if post.hide != true %}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <article class="archive-item">
+          <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
+        </article>
+        {% endif %}
+      {% endfor %}
+    {% endif %}  
+  {% endfor %}
+  
+{% endif %}
