@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ArrayLists Lesson | RMR</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="ArrayLists Lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="RMR Team Lesson Management" />
+<meta property="og:description" content="RMR Team Lesson Management" />
+<link rel="canonical" href="https://rebecca-123.github.io/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html" />
+<meta property="og:url" content="https://rebecca-123.github.io/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html" />
+<meta property="og:site_name" content="RMR" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-14T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ArrayLists Lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-14T00:00:00-05:00","datePublished":"2023-03-14T00:00:00-05:00","description":"RMR Team Lesson Management","headline":"ArrayLists Lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://rebecca-123.github.io/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html"},"url":"https://rebecca-123.github.io/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/rmr-tri3/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rebecca-123.github.io/rmr-tri3/feed.xml" title="RMR" /><link rel="shortcut icon" type="image/x-icon" href="/rmr-tri3/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/rmr-tri3/">RMR</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/rmr-tri3/schedule">Schedule</a><a class="page-link" href="/rmr-tri3/frontend/overview">Frontend</a><a class="page-link" href="/rmr-tri3/api/overview">API</a><a class="page-link" href="/rmr-tri3/search/">Search</a><a class="page-link" href="/rmr-tri3/categories/ap">AP Standards</a><a class="page-link" href="/rmr-tri3/categories/cte">CTE Standards</a><a class="page-link" href="/rmr-tri3/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">ArrayLists Lesson</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-14T00:00:00-05:00" itemprop="datePublished">
+        Mar 14, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+          <a class="category-tags-link" href="/rmr-tri3/categories/ap#fastpages">fastpages</a>
+        
+        &nbsp;
+      
+          <a class="category-tags-link" href="/rmr-tri3/categories/ap#jupyter">jupyter</a>
+        
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Rebecca-123/rmr-tri3/tree/master/_notebooks/2023-03-14-arraylistlesson.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/rmr-tri3/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Rebecca-123/rmr-tri3/master?filepath=_notebooks%2F2023-03-14-arraylistlesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rmr-tri3/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Rebecca-123/rmr-tri3/blob/master/_notebooks/2023-03-14-arraylistlesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/rmr-tri3/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FRebecca-123%2Frmr-tri3%2Fblob%2Fmaster%2F_notebooks%2F2023-03-14-arraylistlesson.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/rmr-tri3/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#A-Brief-Intro:">A Brief Intro: </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Vocabulary:">Vocabulary: </a></li>
+<li class="toc-entry toc-h3"><a href="#Differences-between-Array-and-ArrayList:">Differences between Array and ArrayList: </a></li>
+<li class="toc-entry toc-h3"><a href="#Declaring-an-ArrayList:">Declaring an ArrayList: </a></li>
+<li class="toc-entry toc-h3"><a href="#Hack-1!">Hack 1! </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Methods-with-ArrayLists:">Methods with ArrayLists: </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Hack-2!">Hack 2! </a></li>
+<li class="toc-entry toc-h3"><a href="#Passing-an-ArrayList-as-a-Method-Parameter:">Passing an ArrayList as a Method Parameter: </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#On-the-Exam">On the Exam </a></li>
+<li class="toc-entry toc-h2"><a href="#Traversing-ArrayList-with-loops">Traversing ArrayList with loops </a></li>
+<li class="toc-entry toc-h2"><a href="#Search">Search </a></li>
+<li class="toc-entry toc-h2"><a href="#Sorting">Sorting </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-14-arraylistlesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="A-Brief-Intro:">
+<a class="anchor" href="#A-Brief-Intro:" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Brief Intro:<a class="anchor-link" href="#A-Brief-Intro:"> </a>
+</h2>
+<ul>
+<li>Learning Objective: ArrayList objects are a good way to represent collections of related object reference data.</li>
+<li>An ArrayList is Mutable and contains Object References<ul>
+<li>Mutable: Changeable in size and content</li>
+<li>Object References: Stores Wrapper Class Objects, not primitives</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Vocabulary:">
+<a class="anchor" href="#Vocabulary:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocabulary:<a class="anchor-link" href="#Vocabulary:"> </a>
+</h3>
+<ul>
+<li>Static: size can't be changed<ul>
+<li>Arrays are static in size</li>
+</ul>
+</li>
+<li>Dynamic: size can be changed at any time<ul>
+<li>ArrayLists are dynamic</li>
+</ul>
+</li>
+</ul>
+<h3 id="Differences-between-Array-and-ArrayList:">
+<a class="anchor" href="#Differences-between-Array-and-ArrayList:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Differences between Array and ArrayList:<a class="anchor-link" href="#Differences-between-Array-and-ArrayList:"> </a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Array</th>
+<th>ArrayList</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed length</td>
+<td>resizable length</td>
+</tr>
+<tr>
+<td>fundamental java feature</td>
+<td>park of a framework</td>
+</tr>
+<tr>
+<td>an Object with no methods</td>
+<td>a Class with many methods</td>
+</tr>
+<tr>
+<td>not as flexible</td>
+<td>flexible</td>
+</tr>
+<tr>
+<td>can store primitive data</td>
+<td>not designed to store primitives</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Additionally, it's slightly slower than an Array and can only be used with an import statement</li>
+<li>ArrayList class is implemented using Arrays!</li>
+</ul>
+<h3 id="Declaring-an-ArrayList:">
+<a class="anchor" href="#Declaring-an-ArrayList:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declaring an ArrayList:<a class="anchor-link" href="#Declaring-an-ArrayList:"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// make sure to import!</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="c1">// declare a variable to reference an ArrayList Object</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">DataType</span><span class="o">&gt;</span> <span class="n">variableName</span><span class="p">;</span>
+
+<span class="c1">// instantiate an ArrayList Object</span>
+<span class="c1">// stores only elements of the same, NONPRIMITIVE DataType</span>
+<span class="n">New</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">DataType</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// empty</span>
+<span class="n">New</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">DataType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="c1">// has n spaces</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Use primitive values disguised as Wrapper Class Objects for ArrayLists, since they can only store references to objects, not primitive values!</li>
+</ul>
+<h3 id="Hack-1!">
+<a class="anchor" href="#Hack-1!" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1!<a class="anchor-link" href="#Hack-1!"> </a>
+</h3>
+<p>Create an ArrayList:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// a) that stores Boolean values</span>
+<span class="p">;</span>
+
+<span class="c1">// b) that stores Turtle Objects</span>
+<span class="p">;</span>
+
+<span class="c1">// c) that stores 10 Strings, initially</span>
+<span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Methods-with-ArrayLists:">
+<a class="anchor" href="#Methods-with-ArrayLists:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods with ArrayLists:<a class="anchor-link" href="#Methods-with-ArrayLists:"> </a>
+</h2>
+<ul>
+<li>
+<code>int .size()</code>: returns the number of elements in the ArrayList</li>
+<li>
+<code>boolean .add(datatype obj)</code>: appends obj to the end of the list; returns true</li>
+<li>
+<code>datatype .add(int index, datatype obj)</code>: inserts obj at position index and moves the rest of the elements to the right higher</li>
+<li>
+<code>datatype .remove(int index)</code>: removes element from position index and moves the elements to right of it lower</li>
+<li>
+<code>datatype .set(int index, datatype obj)</code>: replaces the element at position index with obj; returns the element formerly as position index</li>
+<li>
+<code>datatype .get(int index)</code>: returns the element at position index in the list</li>
+</ul>
+<h3 id="Hack-2!">
+<a class="anchor" href="#Hack-2!" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 2!<a class="anchor-link" href="#Hack-2!"> </a>
+</h3>
+<p>Choose 3 different methods from above to change around this sample ArrayList:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Hack2</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">Integer</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">randomNumbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="p">;</span>
+        <span class="p">;</span>
+        <span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Hack2</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Passing-an-ArrayList-as-a-Method-Parameter:">
+<a class="anchor" href="#Passing-an-ArrayList-as-a-Method-Parameter:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Passing an ArrayList as a Method Parameter:<a class="anchor-link" href="#Passing-an-ArrayList-as-a-Method-Parameter:"> </a>
+</h3>
+<ul>
+<li>ArrayList are reference objects and when passed as a parameter in a method they are passed as references to their addresses, not copies of their values</li>
+<li>Methods access and update the elements in ArrayLists directly, so be careful</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="On-the-Exam">
+<a class="anchor" href="#On-the-Exam" aria-hidden="true"><span class="octicon octicon-link"></span></a>On the Exam<a class="anchor-link" href="#On-the-Exam"> </a>
+</h2>
+<ul>
+<li>Min/max value</li>
+<li>Find sum, avg, or mode</li>
+<li>Check elements for particular property</li>
+<li>Check duplicates (individuals or pairs)</li>
+<li>Count elements meeting specific criteria</li>
+<li>Shift or reverse elements</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Traversing-ArrayList-with-loops">
+<a class="anchor" href="#Traversing-ArrayList-with-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Traversing ArrayList with loops<a class="anchor-link" href="#Traversing-ArrayList-with-loops"> </a>
+</h2>
+<ul>
+<li>For loops: i++ or i--, i = 0 or i = arr.size()-1</li>
+<li>While loops: i &lt;arr.size()</li>
+<li>Enhanced for loop: no index tracking explicitly used</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">DataType</span> <span class="n">variable</span><span class="p">:</span> <span class="n">collection</span><span class="p">)</span> <span class="p">{</span>
+    
+<span class="p">}</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//code</span>
+    <span class="n">i</span><span class="o">++</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Search">
+<a class="anchor" href="#Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Search<a class="anchor-link" href="#Search"> </a>
+</h2>
+<ul>
+<li>Linear search uses loops to check each element for a condition</li>
+<li>Remember different checks for conditions: == for int, rounding for doubles (or subtraction), .equals() for objects</li>
+<li>Usual return method is index or -1 (false) if not found</li>
+<li>Can use enhanced for loop if checking only for existence (no indexes)</li>
+<li>If removing elements, use index-- to avoid skipping elements</li>
+<li>Sometimes have to sort first to avoid skipping values</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sorting">
+<a class="anchor" href="#Sorting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sorting<a class="anchor-link" href="#Sorting"> </a>
+</h2>
+<ul>
+<li>Selection sort uses a min/max variable that updates with a linear iteration pattern</li>
+<li>Needs a helper method to swap values using a third variable</li>
+<li>Insertion sort builds sorted structure by placing elements at assigned indexes, uses while loop</li>
+<li>Better than selection sort</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Rebecca-123/rmr-tri3"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/rmr-tri3/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://rebecca-123.github.io/rmr-tri3/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/rmr-tri3/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>RMR Team Lesson Management</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

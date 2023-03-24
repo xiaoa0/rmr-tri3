@@ -1,0 +1,110 @@
+{
+  
+    
+        "post0": {
+            "title": "ArrayLists Lesson",
+            "content": "A Brief Intro: . Learning Objective: ArrayList objects are a good way to represent collections of related object reference data. | An ArrayList is Mutable and contains Object References Mutable: Changeable in size and content | Object References: Stores Wrapper Class Objects, not primitives | . | . Vocabulary: . Static: size can&#39;t be changed Arrays are static in size | . | Dynamic: size can be changed at any time ArrayLists are dynamic | . | . Differences between Array and ArrayList: . Array ArrayList . fixed length | resizable length | . fundamental java feature | park of a framework | . an Object with no methods | a Class with many methods | . not as flexible | flexible | . can store primitive data | not designed to store primitives | . Additionally, it&#39;s slightly slower than an Array and can only be used with an import statement | ArrayList class is implemented using Arrays! | . Declaring an ArrayList: . // make sure to import! import java.util.ArrayList; // declare a variable to reference an ArrayList Object ArrayList&lt;DataType&gt; variableName; // instantiate an ArrayList Object // stores only elements of the same, NONPRIMITIVE DataType New ArrayList&lt;DataType&gt;(); // empty New ArrayList&lt;DataType&gt;(n); // has n spaces . Use primitive values disguised as Wrapper Class Objects for ArrayLists, since they can only store references to objects, not primitive values! | . Hack 1! . Create an ArrayList: . // a) that stores Boolean values ; // b) that stores Turtle Objects ; // c) that stores 10 Strings, initially ; . Methods with ArrayLists: . int .size(): returns the number of elements in the ArrayList | boolean .add(datatype obj): appends obj to the end of the list; returns true | datatype .add(int index, datatype obj): inserts obj at position index and moves the rest of the elements to the right higher | datatype .remove(int index): removes element from position index and moves the elements to right of it lower | datatype .set(int index, datatype obj): replaces the element at position index with obj; returns the element formerly as position index | datatype .get(int index): returns the element at position index in the list | . Hack 2! . Choose 3 different methods from above to change around this sample ArrayList: . import java.util.ArrayList; public class Hack2 { public static void main(Integer[] args) { ArrayList&lt;Integer&gt; randomNumbers = new ArrayList&lt;Integer&gt;(); ; ; ; } } Hack2.main(null); . Passing an ArrayList as a Method Parameter: . ArrayList are reference objects and when passed as a parameter in a method they are passed as references to their addresses, not copies of their values | Methods access and update the elements in ArrayLists directly, so be careful | . On the Exam . Min/max value | Find sum, avg, or mode | Check elements for particular property | Check duplicates (individuals or pairs) | Count elements meeting specific criteria | Shift or reverse elements | . Traversing ArrayList with loops . For loops: i++ or i--, i = 0 or i = arr.size()-1 | While loops: i &lt;arr.size() | Enhanced for loop: no index tracking explicitly used | . for (int i = 0, i &lt; arr.size()-1, i++) { } for (DataType variable: collection) { } while (int i &lt; arr.size()-1) { //code i++ } . Search . Linear search uses loops to check each element for a condition | Remember different checks for conditions: == for int, rounding for doubles (or subtraction), .equals() for objects | Usual return method is index or -1 (false) if not found | Can use enhanced for loop if checking only for existence (no indexes) | If removing elements, use index-- to avoid skipping elements | Sometimes have to sort first to avoid skipping values | . Sorting . Selection sort uses a min/max variable that updates with a linear iteration pattern | Needs a helper method to swap values using a third variable | Insertion sort builds sorted structure by placing elements at assigned indexes, uses while loop | Better than selection sort | . Hacks .",
+            "url": "https://rebecca-123.github.io/rmr-tri3/fastpages/jupyter/2023/03/14/arraylistlesson.html",
+            "relUrl": "/fastpages/jupyter/2023/03/14/arraylistlesson.html",
+            "date": " • Mar 14, 2023"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "RMR Plan for Tri 3 teaching and skit",
+            "content": "Pair/Trios and Team Members . Allie Xiao, Saathvika Ajith, Soren Zhuang | Rebecca Su, Aadya Daita, Saumya Palakodety | Madhumita Narayan, Shraddha Kadaba, Meena Annamalai | Rohan Gaikwad, Shreya Ahuja | Tianbin Liu, Sophie Park, Linda Liu | Skit - Merge Sort (Watermelon Fair) . Fun Scenario -&gt; (Person) wants to sort how big each of his prize winning watermelons are, but he doesn’t have them in order! | Amongst ourselves, we each grab a random number sticky note from a bucket | We all stand in a line, unsorted | (Person) says “how do we sort this??” | Narrator says “we will do a MERGE sort” | then we go into each part involved in the merge sort | Narrator describes each element part of the sort | Meanwhile, there is an associated fastpage that gives code behind each part of the skit AS THE SKIT CONTINUES | Eventually, the sort finishes and the numbers are in order | Teaching - Days 1 and 2 CollegeBoard Units 6-8 (Arrays, ArrayLists, and 2D Arrays) and FRQs 3 and 4 . Teaching plan: Day 1: . Go over terms and exercises and give some time to do hacks | look at collegeboard requirements | look at sample questions | Walk through FRQ 3 and FRQ 4 | . | Day 2: . Walk through the management pbl feature and give time to do hacks | . | Day 3: . Live grading | . | . | . PBL Management Feature . Databases . Team database (all scrum teams) –&gt; store team name and password for login functionality | Assignment database within each team (similar to notes for person) . Many to One: one team has many assignments Each assignment will have link to review ticket, self-grade | TEACHER Role should be able to add final grade | . | . | Team database manages by sub-teams and assignment/scores with Roles | Grading database is for each sub team of other groups and includes grading and comments | . Wireframe Plans . No login required . Home page/nav bar | Sign up page | Login page | Database with all teams | . Login required . Team dashboard/profile page | Update team profile page | Team assignment database | . Admin only . Delete team page | . Link to review ticket .",
+            "url": "https://rebecca-123.github.io/rmr-tri3/2023/03/10/rmrplan.html",
+            "relUrl": "/2023/03/10/rmrplan.html",
+            "date": " • Mar 10, 2023"
+        }
+        
+    
+  
+
+  
+  
+      ,"page0": {
+          "title": "Schedule",
+          "content": ". Unit 7: Trimester 3 Data Structures . Trimester 3 has a focus Data Structures that relate to the AP exam. A key requirement is to make your own Algo Rythmic sorting video. The midterm project, due at the beginning of week 30, will be either FE/BE or Jupyter Notebook project and hopefully you can use it as a lesson starting Week 30. The theme is produce work that can be used to help you pass the AP Exam and be used by future generations in AP CS, as a Study Aide. Each student must cover key concepts from one of the Four AP FRQ types, contain a key Data Structure, and utilize sorting. These requirements are fairly generic and could complement any teaching assignment or project. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 25 | | | | | . 26 | | | | - RMR Plan for Tri 3 teaching and skit | . 27 | | | | | . 28 | | | | | . 29 | | | | | . . Unit 1: Introduction to Tools and Resources . To learn Java and build skills for Career Technical Education students will quickly immerse into Tools and Resources for Java Development and Fastpages Blogging. These early weeks will focus on the Development Environment, Fastpages Blogging platform, Code.org resources, AP Classroom resources, and Programming Java with Jupyter Notebooks. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 0 | | | | | . 1 | | | | | . 2 | | | - Frontend | | . 3 | | | | | . . Unit 2: Java Mini-labs . After using Code.org in the first unit, students have been introduced to Classes and Inheritance. In this unit students will become more familiar with Java development through mini-labs. These labs will focus on AP required aspects of Java, additionally they can be used as code to support the backend of a Desktop App or WebSite. This unit concludes with 4 person Project Plan, kicking off the end of trimester N@TM project. Students will be able to write code that completes full stack process of Frontend talking to the Java backend. This section will conclude with a “required” N@tM open house. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 4 | | | | | . 5 | | | | | . 6 | | | - API | | . 7 | | | | | . . Unit 3: Individual Project . This Units requirement is to to build individual development skills in Java. By the end of this unit students will be aware of all the College Board Units and FRQ types. Student will participate or have participated in presentations and live grading of peers work. Fastpages Blogs and Jupyter Notebooks are required for all individuals. By the end of this section you should have examples, study materials, and code that show a great deal of effort, understanding, and competency. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 8 | | | | | . 9 | | | | | . 10 | | | | | . 11 | | | | | . 12 | | | | | . . Unit 4: College Board Study Unit . This period will complete formal teaching and grading on the basics of the 10 units. Also, there will be a tech talk and homework on each FRQ type customized for PBL idea. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 13 | | | | | . 14 | | | | | . 15 | | | | | . 16 | | | | | . . Unit 5: 2nd Trimester Projects . Objective of these weeks is to explore and create ideas and concepts for a Team Trimester N@tM project. Adding frontend and creativity while using APIs/Databases. Students should earn trust in these design weeks to instill confidence in the Teach for the right to work independently on a project of their own personal interest. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 17 | | | | | . 18 | | | | | . 19 | | | | | . 20 | | | | | . . Unit 6: 2nd Trimester N@tM and finish Project . This will be most creative portion of year for CSA students. Each person within “Student Teams” will have their own specialty within their student project that shows Full Stack competency. Intentions for this period is to have a free and creative period, driven by your Issues and Scrum Board. Student should be able to talk about design, fe/be coding, and database features of their portion of the project in weekly live reviews. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 21 | | | | | . 22 | | | | | . 23 | | | | | . 24 | | | | | . . Unit 8: Trimester 3 Data Structures . Trimester 3 AP unit. Test is May 3rd. Student will lead several study sessions (20 minute test, follow by review) the week before the exam. In any break in study, students will transition activities to a final project. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 30 | | | | | . 31 | | | | | . 32 | | | | | . 33 | | | | | . . Unit 9: Trimester 3 Data Structures . Trimester 3 Wrap up your preferred project or instructional site. There will be an opportunity to contribute and be published to the NightHawk Coding Society library. If your project is selected, then you will receive a high ‘A’ on final. . . Week Sprint/Points Link AP Test Prep Career Tech Human Prep . 34 | | | | | . 35 | | | | | . 36 | | | | | .",
+          "url": "https://rebecca-123.github.io/rmr-tri3/schedule",
+          "relUrl": "/schedule",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
+          "title": "Frontend",
+          "content": "| Overview | Tutorial | Calculator | Binary | Grades | Graph | Life | Snake | . . Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website. In this class, we will be using Fastpages on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding. CSS style layout is provided by using Themes provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript. | Fastpages defaults to the minima theme. Review the the README.md for style or layout customizations. | GitHub Pages deployment is performed through Jekyll, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub. | HTML generation is performed through Liquid, a template language (similar to Jinja2 or Thymeleaf). | JavaScript enable pages to have actions, fetch content, animate, etc | . . . Sample Code in this Sub Menu . HTML, CSS, and JavaScript are the front-end of the Web. Many tools and languages complement development using markup, style and javascript. This section of the Del Note CS website is providing some code samples. These are intended to spark your own PBL ideas. Each of these were generated after watching others teach or interacting with students. . Tutorial: This is a Jupyter Notebook built using the JavaScript kernel. This provides a few fundamentals of JavaScript language. Pull this file into VSCode and explore the fundamentals of the language. | Calculator: This calculator was inspired by Mr. Mortensen’s calculator that he built in Objective-C during his first year of teaching at DNHS. It was recreated by former student Anthony using GitHub pages, HTML, JavaScript, and CSS in 2022. | Binary: This example was created after watching Harvard CS50 by David J. Malan in 2020, he had built a machine to turn on and off lights/binary digits. My thought after watching machine, why not simulate it in software? Liquid is used to generate the HTML bits and parameters for onclick actions | JavaScript is used base 2, 8, 16 calculations | . | Grades: This grade calculator was created to show interaction of HTML and JavaScript to perform input. Additionally, it show how to add element to HTML Document Object Model (DOM). FYI, the IJavaScript kernel did not support input as of this writing. | Graph: This was created when a student named Bryant 2022 asked me the question “how would I plot data?” as described in an FRQ. JavaScript canvas is used to draw grid, axis, lines | . | Life: This was created by Nathaniel 2022 when I asked him about something interesting to show students in JS that relates to school. Built on Conway’s Game of Life (Wikipedia, Original) | Somewhat pure JavaScript, no canvas usage even though it has a grid. | . | Snake: This was interest of students in each of my 3 years, inspiration and some of the code came from a student named Nolan 2021. Contains menu and settings, as well as Grid | Uses JavaScript canvas and key events | . | .",
+          "url": "https://rebecca-123.github.io/rmr-tri3/frontend/overview",
+          "relUrl": "/frontend/overview",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
+          "title": "API",
+          "content": "| Overview | Covid19 RapidAPI | Jokes API | JWT Login | Database CRUD | . APIs in this Sub Menu . HTML, CSS, and JavaScript are the front-end of the API. Java and API resource definitions are used for RESTful API definitions. Abstraction of Frontend and Backend code, the exchange of standard data format (JSON), and guidelines for exchange (REST) is a technique that saves a lot of time between developers. Learning APIs is a highly recommended step for every developer trying to break into the world of tech. . Covid19: RapidAPI example. This is introducing APIs by accessing something that already exists. RapidAPI shows how many practice RESTful definitions. Almost any data source imagined can be accessed here. | Jokes: An introduction to Java RESTful API libraries. A Java Database is used for the Data Model, providing data persistence. This example introduces concepts like JPA and POJOs. | Database CRUD: A full RESTful API example. This data if properly managed in deployment and migrated when changed can last forever. | . Web API Overview . . A Web API is an application programming interface typically for a web browser. Non-changing or Static Endpoints are used in interacting with the server-side Web APIs. RESTful Web APIs use HTTP methods to access resources via URL parameters, and use JSON for transmitting text between client and server. Server. In these examples, we will be using Java to define REST APIs. Java tools have been around a long time and thus are popular for building RESTful APIs | REST: Representational State Transfer. A set of guidelines on how to architect a network-connected software system. | Client-server: One guideline is a client and server must be decoupled from each other, allowing each to develop independently. | Layered system: The client may access the resources on the server indirectly through other layers such as a proxy or using authentication. This will be clarified by application and security requirements. | . Client. JavaScript is the frontend language used to consume data from the Python defined REST APIs. Fetch will be used to make HTTP requests, as well as handle HTTP response. There are four basic HTTP methods, they align with Create, Read, Update, Delete (CRUD). | GET =&gt; Retrieve/Read data | POST =&gt; Create data | PUT =&gt; Update data | DELETE =&gt; Delete data | . REST endpoints will have similarity from application to application. In planning APIs, for a Users system you can anticipate key methods. The Users RESTful APIs would likely contain these endpoints. | GET: /users =&gt; Get a list of users | GET: /users(id) =&gt; Get a single user | POST: /users =&gt; Create a new user | PUT: /users(id) =&gt; Update a user | DELETE: /users(id) =&gt; Delete a user | . Once a RESTful API receives and processes an HTTP request, it will return an HTTP response. Included in this response is an HTTP status code. Common status codes are shown. | 200 =&gt; OK, this response will then have the promise of JSON data | 400 =&gt; Bad Request | 404 =&gt; Not Found | 500 =&gt; Internal Server Error (aka bug) | . . . .",
+          "url": "https://rebecca-123.github.io/rmr-tri3/api/overview",
+          "relUrl": "/api/overview",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+
+  
+
+  
+      ,"page6": {
+          "title": "About",
+          "content": "This site is built with fastpages . Key Links . GitHub Repos: github.com/nighthawkcoders, Spring Portfolio Template | AWS Deployments: csa.nighthawkcodingsociety.com | Slack: Join Link | 2021-2022 Archives: Fall, Early Winter, Late Winter, Spring | . .",
+          "url": "https://rebecca-123.github.io/rmr-tri3/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page15": {
+          "title": "",
+          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "url": "https://rebecca-123.github.io/rmr-tri3/robots.txt",
+          "relUrl": "/robots.txt",
+          "date": ""
+      }
+      
+  
+
+}
