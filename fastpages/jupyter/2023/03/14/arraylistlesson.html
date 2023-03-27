@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -145,6 +145,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#On-the-Exam">On the Exam </a></li>
 <li class="toc-entry toc-h2"><a href="#Traversing-ArrayList-with-loops">Traversing ArrayList with loops </a></li>
+<li class="toc-entry toc-h2"><a href="#Algorithm-Samples">Algorithm Samples </a></li>
 <li class="toc-entry toc-h2"><a href="#Search">Search </a></li>
 <li class="toc-entry toc-h2"><a href="#Sorting">Sorting </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
@@ -287,7 +288,7 @@ window.onload = wrap_img;
 <span class="c1">// b) that stores Turtle Objects</span>
 <span class="p">;</span>
 
-<span class="c1">// c) that stores 10 Strings, initially</span>
+<span class="c1">// c) that initializes with 10 Strings</span>
 <span class="p">;</span>
 </pre></div>
 
@@ -431,6 +432,68 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Algorithm-Samples">
+<a class="anchor" href="#Algorithm-Samples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithm Samples<a class="anchor-link" href="#Algorithm-Samples"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// sample for max value search</span>
+
+<span class="kd">private</span> <span class="kt">double</span> <span class="nf">findMax</span> <span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// setting first value as variable for comparison</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// checking values from 2nd to last </span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">);</span> <span class="c1">// updating max value with each check</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">max</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// sample code for total sum of integers - finish the loop!</span>
+
+<span class="kd">private</span> <span class="kt">int</span> <span class="nf">findSum</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="o">???</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Search">
 <a class="anchor" href="#Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Search<a class="anchor-link" href="#Search"> </a>
 </h2>
@@ -446,6 +509,30 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">int</span> <span class="nf">where</span><span class="p">(</span><span class="kt">double</span> <span class="n">magicNumber</span><span class="p">,</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">realNumbers</span><span class="p">,</span> <span class="kt">double</span> <span class="n">delta</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">realNumbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="n">magicNumber</span><span class="o">-</span><span class="n">realNumbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">delta</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -462,6 +549,71 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// selection sort</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+ 
+    <span class="c1">// nested loop 1 index ahead</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="c1">// comparing elements</span>
+        <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="c1">// Swapping</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
+            <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+            <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Printing sorted array </span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// insertion sort</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">outer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">outer</span> <span class="o">&lt;</span> <span class="n">randomList</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">outer</span><span class="o">+</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">DebugDuck</span> <span class="n">tested</span> <span class="o">=</span> <span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">outer</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outer</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">inner</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">tested</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">inner</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">randomList</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">inner</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">inner</span><span class="p">));</span>
+        <span class="n">inner</span><span class="o">--</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">randomList</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">inner</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tested</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
