@@ -393,9 +393,18 @@ window.onload = wrap_img;
 <a class="anchor" href="#Traversing-ArrayList-with-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Traversing ArrayList with loops<a class="anchor-link" href="#Traversing-ArrayList-with-loops"> </a>
 </h2>
 <ul>
-<li>For loops: i++ or i--, i = 0 or i = arr.size()-1</li>
-<li>While loops: i &lt;arr.size()</li>
-<li>Enhanced for loop: no index tracking explicitly used</li>
+<li>For loops traverse an ArrayList given that a value condition is met (i) and updated each time<ul>
+<li>i++ or i--, i = 0 or i = arr.size()-1</li>
+</ul>
+</li>
+<li>While loops continue while i meets a certain condition<ul>
+<li>i &lt;arr.size()</li>
+</ul>
+</li>
+<li>Enhanced for loops do not explicitly use a variable for index tracking<ul>
+<li>for variable : collection</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -435,6 +444,10 @@ window.onload = wrap_img;
 <h2 id="Algorithm-Samples">
 <a class="anchor" href="#Algorithm-Samples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithm Samples<a class="anchor-link" href="#Algorithm-Samples"> </a>
 </h2>
+<ul>
+<li>Common AP exam operations include finding a max or minimum value and summing the integers in an ArrayList</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -501,9 +514,9 @@ window.onload = wrap_img;
 <li>Linear search uses loops to check each element for a condition</li>
 <li>Remember different checks for conditions: == for int, rounding for doubles (or subtraction), .equals() for objects</li>
 <li>Usual return method is index or -1 (false) if not found</li>
-<li>Can use enhanced for loop if checking only for existence (no indexes)</li>
+<li>Enhanced for loops are useful if checking for existence (no indexes)</li>
 <li>If removing elements, use index-- to avoid skipping elements</li>
-<li>Sometimes have to sort first to avoid skipping values</li>
+<li>May have to sort first to avoid skipping values</li>
 </ul>
 
 </div>
@@ -543,7 +556,6 @@ window.onload = wrap_img;
 <li>Selection sort uses a min/max variable that updates with a linear iteration pattern</li>
 <li>Needs a helper method to swap values using a third variable</li>
 <li>Insertion sort builds sorted structure by placing elements at assigned indexes, uses while loop</li>
-<li>Better than selection sort</li>
 </ul>
 
 </div>
@@ -567,10 +579,7 @@ window.onload = wrap_img;
         <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
 
-            <span class="c1">// Swapping</span>
-            <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-            <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
-            <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+            <span class="c1">// write the swap code!</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
